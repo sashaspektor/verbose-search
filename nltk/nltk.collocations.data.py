@@ -9,7 +9,6 @@ def __init__(self, word_fd, bigram_fd, window_size=2):
     AbstractCollocationFinder.__init__(self, word_fd, bigram_fd)
     self.window_size = window_size
 
-
 @classmethod
 def from_words(cls, words, window_size=2):
     wfd = FreqDist()
